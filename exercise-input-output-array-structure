@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+//defining Student structure
+struct Student
+{
+	int studID, age;
+	string studName;
+};
+
+int main()
+{
+	//declaring arrStudent array-structure
+  Student arrStudent[4];
+
+  //for-loop to input values into array-structure
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Student ID: " << endl;
+		cin >> arrStudent[i].studID;
+		cout << "Student Name: " << endl;
+		cin >> arrStudent[i].studName;
+		cout << "Student Age: " << endl;
+		cin >> arrStudent[i].age;
+	}
+
+  //for-loop to output values from array-structure
+	for (int i = 0; i < 4; i++)
+	{
+		cout << "Student ID: " << arrStudent[i].studID << endl;
+		cout << "Student Name: " << arrStudent[i].studName << endl;
+		cout << "Student Age: " << arrStudent[i].age << endl;
+	}
+}
